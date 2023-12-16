@@ -6,6 +6,10 @@
     align-items: center;
     flex-direction: column;
   }
+
+  .menu .menuTitle {
+    color: #F6A5C0;
+  }
   .menu .menuTitle {
     font-family: cursive;
     font-size: 60px;

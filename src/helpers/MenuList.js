@@ -5,35 +5,61 @@ import Vegan from "../assets/vegan.jpg";
 import Pineapple from "../assets/pineapple.jpg";
 import Expensive from "../assets/expensive.jpg";
 
+
+import BlackForestCake from "../assets/blackForestCake.jpg";
+import AssortedDonuts from "../assets/donut.jpg";
+import ChocolateCupcakes from "../assets/chocolateCupcakes.jpg";
+import OatmealCookies from "../assets/oatmealCookies.jpg";
+import ClassicBagel from "../assets/classicBagel.jpg";
+import Brownie from "../assets/brownie.jpg";
+import EggTart from "../assets/eggTart.jpg";
+import Macaroons from "../assets/macaroons.jpg";
+import BlueBerryMuffin from "../assets/blueBerryMuffin.jpg";
+
 export const MenuList = [
   {
-    name: "Pepperoni Pizza",
-    image: Pepperoni,
-    price: 15.99,
+    name: "Black Forest Cake",
+    image: BlackForestCake,
+    price: "3.99 per slice",
   },
   {
-    name: "Margherita Pizza",
-    image: Margherita,
-    price: 11.99,
+    name: "Assorted Donuts",
+    image: AssortedDonuts,
+    price: "1.50 each",
   },
   {
-    name: "PedroTech Special Pizza",
-    image: PedroTechSpecial,
-    price: 256.53,
+    name: "Chocolate Cupcake",
+    image: ChocolateCupcakes,
+    price: "1.99 each",
   },
   {
-    name: "Vegan Pizza",
-    image: Vegan,
-    price: 17.99,
+    name: "Oatmeal Cookie",
+    image: OatmealCookies,
+    price: "1.00 each",
   },
   {
-    name: "Pineapple Pizza",
-    image: Pineapple,
-    price: 4.99,
+    name: "Classic Bagel",
+    image: ClassicBagel,
+    price: "0.50 each",
   },
   {
-    name: "Very Expensive Pizza",
-    image: Expensive,
-    price: 1997.99,
+    name: "Brownie",
+    image: Brownie,
+    price: "1.50 each",
+  },
+  {
+    name: "Egg Tart",
+    image: EggTart,
+    price: "1.00 each",
+  },
+  {
+    name: "Macaroons",
+    image: Macaroons,
+    price: "1.50 each",
+  },
+  {
+    name: "Blueberry Muffin",
+    image: BlueBerryMuffin,
+    price: "1.00 each",
   },
 ];
