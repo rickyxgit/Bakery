@@ -6,6 +6,7 @@ import "../styles/Menu.css";
 function Menu() {
   return (
     <div className="menu">
+        <div className="absolute-background"></div>
         <h1 className="menuTitle"> Anne's Sweets </h1>
         <div className="menuList">
             {MenuList.map((menuItem, key) => {
