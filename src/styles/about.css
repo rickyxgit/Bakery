@@ -1,37 +1,67 @@
-.about {
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-  }
+/* Apply flexbox to create a vertical (column) layout */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+ 
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+/* Style individual flex items */
+.flex-item {
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  height: 100%; 
+}
+
+.flex-item:first-child {
+  color: #fff; /* Example text color for the first child */
+  font-weight: bold; /* Example font weight for the first child */
+  min-height: 22em; 
+  margin: 0 auto; /* Center horizontally */
+  background-image: url(../assets/test1.avif);
+  background-size: cover; 
+  background-position: 50% 50%;
+
+}
+
+.flex-item .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  position: relative; 
+  margin: auto auto; /* Center horizontally */
+  width: 70%;
+  min-height: 22em;
+  box-sizing: border-box;
+  padding: 0em 4em; 
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the alpha value (0.0 to 1.0) for transparency */
+  border: 2px solid transparent;  
+  border-radius: 10px; /* Apply a 10px border radius to all corners */
+}
+
+.flex-item:hover .inner {
+  background-color: rgba(0, 0, 0, 0.93); /* Adjust the alpha value (0.0 to 1.0) for transparency */
+}
+
+
+.flex-item:first-child p {
+  font-size: 1.3em;
+  text-align: center; 
+}
+
+.flex-item:first-child h2 {
+  font-size: 2em;
+  text-align: center; 
+}
+
+
+
+.flex-item:nth-child(2) {
+  background-color: #4CAF50; /* Example background color for the first child */
+  color: #fff; /* Example text color for the first child */
+  font-weight: bold; /* Example font weight for the first child */
   
-  .aboutTop {
-    width: 100%;
-    height: 45%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  }
-  
-  .aboutBottom {
-    display: flex;
-    flex-direction: column;
-    height: 55%;
-    align-items: center;
-    margin-top: 50px;
-  }
-  
-  .aboutBottom p {
-    width: 1200px;
-  }
-  
-  .about .aboutBottom h1 {
-    font-weight: 400;
-    font-size: 70px;
-    color: black;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    transform: translateY(-40px);
-  }
+}

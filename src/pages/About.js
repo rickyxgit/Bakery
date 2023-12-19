@@ -1,32 +1,47 @@
 import React from 'react';
-import MultiplePiizas from "../assets/multiplePizzas.jpeg";
+import chef from "../assets/chef.jpg";
 import "../styles/about.css";
 
 function About() {
   return (
     <div className="about">
-        <div className="aboutTop" style={{ backgroundImage: `url(${MultiplePiizas})`}}></div>
-        <div className="aboutBottom">
-            <h1> ABOUT US </h1>
+      <div class="flex-container">
+
+        <div class="flex-item">
+          <div class="inner">
+
+          
+            <h2> Our Story: </h2> 
             <p>
-                Welcome to Slice Haven, where passion for pizza meets a commitment to quality! Nestled in the heart of Vancouver, 
-                our pizzeria is a culinary oasis dedicated to crafting the perfect pie. Established in 1995, 
-                Slice Haven has become synonymous with mouthwatering flavors and a warm, inviting atmosphere.
-
-                At Slice Haven, we believe that great pizza starts with the finest ingredients. 
-                Our dough is hand-kneaded daily, creating the perfect foundation for our pizzas. 
-                We source the freshest tomatoes for our signature sauce and use a blend of premium cheeses to achieve that perfect melt-in-your-mouth goodness. 
-                Toppings? Oh, we've got you covered with a tantalizing array of fresh vegetables, savory meats, and unique gourmet options.
-
-                But Slice Haven is more than just pizza; it's a celebration of community and connection. 
-                Our friendly staff is passionate about creating a welcoming environment where families, friends, 
-                and pizza enthusiasts alike can come together to savor not just a meal, but an experience. 
-                Whether you're a traditional Margherita lover or an adventurous BBQ chicken and pineapple explorer, there's a slice for every taste at Slice Haven.
-
-                Join us on a journey of flavor, where every bite tells a story of craftsmanship and dedication. 
-                Discover the joy of pizza done right – because at Slice Haven, we're not just making pizza; we're crafting memories, one slice at a time.
+              At Sweet Delights, we believe in the magic of pastry-making. 
+              Our journey began with a passion for crafting exquisite pastries that not only delight the taste buds but also awaken the senses. 
+              Established in [Year], Sweet Delights has grown from a humble kitchen experiment to a beloved destination for those seeking the 
+              perfect blend of artistry and flavor in their pastries.
             </p>
+          </div>
         </div>
+
+        <div class="flex-item">
+          <h2> Crafting Sweet Memories, One Bite at a Time </h2>
+          <p>
+            Our talented team of pastry artisans brings passion and creativity to every confection we create. 
+            From delicate pastries to artisanal cakes, each treat is a masterpiece, meticulously crafted with the finest ingredients. 
+            We believe that a good pastry not only tantalizes the taste buds but also captures the essence of the moment.
+          </p>
+        </div>
+
+        <div class="flex-item">
+          <h2> Quality Ingredients, Artful Creations </h2>
+          <p>
+            Quality is at the heart of everything we do. We source only the finest ingredients, 
+            ensuring that every bite is a symphony of flavors. Our commitment to excellence extends 
+            beyond taste – our pastries are crafted with precision and artistry. Each creation tells a story of dedication to the craft and a love for the sweet life.
+          </p>
+          
+
+      </div>
+        
+      </div>
     </div>
   )
 }
