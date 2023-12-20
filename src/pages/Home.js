@@ -2,7 +2,6 @@ import React from 'react'
 import {Link} from "react-router-dom";
 import '../styles/Home.css';
 
-//style={{ backgroundImage: `url(${BannerImage})` }}
 function Home() {
   return (
     <div className="home" >
@@ -11,7 +10,7 @@ function Home() {
         <h1> Anne's Bakery </h1>
         <p> Indulge in Sweet Moments, <br></br> Every Bite a Delight! </p>
         <Link to="/menu">
-          <button> ORDER NOW </button>
+          <button> SEE OUR MENU </button>
         </Link>
       </div>
     </div>
