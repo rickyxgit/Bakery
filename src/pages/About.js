@@ -1,5 +1,4 @@
 import React from 'react';
-
 import "../styles/about.css";
 
 function About() {
@@ -9,11 +8,11 @@ function About() {
 
         <div className="flex-item">
           <div className="inner">
-            <h2> Our Story: </h2> 
+            <h2> Our Story </h2> 
             <p>
-              At Sweet Delights, we believe in the magic of pastry-making. 
+              At Anne's Bakery, we believe in the magic of pastry-making. 
               Our journey began with a passion for crafting exquisite pastries that not only delight the taste buds but also awaken the senses. 
-              Established in [Year], Sweet Delights has grown from a humble kitchen experiment to a beloved destination for those seeking the 
+              Established in 1995, Anne's Bakery has grown from a humble kitchen experiment to a beloved destination for those seeking the 
               perfect blend of artistry and flavor in their pastries.
             </p>
           </div>
@@ -43,10 +42,7 @@ function About() {
             </p>
           </div>
           
-          
-
       </div>
-        
       </div>
     </div>
   )
