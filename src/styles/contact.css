@@ -128,3 +128,9 @@ form label {
 }
 
 
+@media only screen and (max-width: 800px) {
+  .contact .leftSide {
+    flex: 0;
+  }
+}
+

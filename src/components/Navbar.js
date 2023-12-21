@@ -3,16 +3,11 @@ import {Link, NavLink} from 'react-router-dom'
 import '../styles/Navbar.css';
 import ReorderIcon from '@mui/icons-material/Reorder';
 
-
-
 function Navbar() {
     const [openLinks, setOpenLinks] = useState(false); 
-
     const toggleNavbar = () => {
       setOpenLinks(!openLinks);
     };
-
-    
 
   return (
     <div className="navbar">

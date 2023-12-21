@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import PizzaLeft from "../assets/Capture.jpg";
+import Donut from "../assets/contactLeft.jpg";
 import "../styles/contact.css";
 
 function Contact() {
@@ -43,7 +43,7 @@ function Contact() {
     <div className="contact">
       <div
         className="leftSide"
-        style={{ backgroundImage: `url(${PizzaLeft})` }}
+        style={{ backgroundImage: `url(${Donut})` }}
       >
         {" "}
       </div>

@@ -30,3 +30,20 @@
 .footer p {
   color: white;
 }
+
+@media only screen and (max-width: 800px) {
+  .socialMedia svg {
+    margin: 10px;
+    font-size: 60px;
+  }
+
+  .footer {
+    height: 180px;
+    padding-top: 8px;
+  }
+
+  .footer p {
+    font-size: 0.9em;
+  }
+
+}

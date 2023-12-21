@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'natureBeauty'; /* Replace 'YourChosenFontName' */
+  font-family: 'natureBeauty'; 
   src: url('../fonts/nature_beauty.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -41,8 +41,6 @@
     font-weight: lighter;
     color:  #F6A5C0; 
     font-family: natureBeauty, 'Arial';
-
-    
   }
   
   .headerContainer button {
@@ -64,8 +62,33 @@
     color: #121619;
     transition: 0.8s ease-in;
   }
+
+  /** slider */
+  .slideIn1 {
+    margin-bottom: 0;
+    opacity: 0;
+    transform: translateX(-25px);
+    transition: opacity 1.4s ease-in-out, transform 1.4s ease-in-out;
+  }
   
-  @media only screen and (max-width: 650px) {
+  .slideIn1.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .slideIn2{
+    margin-top: 0;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+  }
+
+  .slideIn2.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  @media only screen and (max-width: 800px) {
     .home {
       justify-content: center;
       align-items: center;
@@ -86,10 +109,11 @@
   
     .headerContainer h1 {
       font-size: 40px;
-      height: 30px;
+      padding: 2px;
       color:  #F6A5C0; 
       font-family: natureBeauty, 'Arial';
       text-align: center; 
+      margin: 5px 5px;
     }
   
     .headerContainer p {
@@ -97,11 +121,21 @@
       color:  #F6A5C0; 
       font-family: natureBeauty, 'Arial';
       text-align: center; 
+     
+    }
+
+    p {
+      margin: 1em;
+      padding: 1em;
     }
   
     .headerContainer button {
-      margin-bottom: 30px;
-      border: 2px solid #333;
-      border-color: #F6A5C0; 
+      margin-bottom: 10px;
+      background-color: #F6A5C0; 
+      height: 50px;
+      width: 200px;
+      color: #121619;
+      text-decoration: none;
+      font-size: 20px;
     }
   }

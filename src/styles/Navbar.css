@@ -1,21 +1,19 @@
 @font-face {
-  font-family: 'natureBeauty'; /* Replace 'YourChosenFontName' */
-  src: url('../fonts/nature_beauty.ttf') format('truetype');
+  font-family: "natureBeauty";
+  src: url("../fonts/nature_beauty.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 .navbar .rightSide a:hover {
-  color: #F6A5C0;
+  color: #f6a5c0;
 }
 
 .navbar a.active {
-  border: 2px solid #F6A5C0; 
+  border: 2px solid #f6a5c0;
   padding: 10px;
-
-  border-radius: 10px; /* Apply a 10px border radius to all corners */
+  border-radius: 10px;
 }
-
 
 .navbar {
   width: 100%;
@@ -25,11 +23,9 @@
   flex-direction: row;
 }
 
-
-
 .navbar h1 {
-  color:  #F6A5C0; 
-  font-family: natureBeauty, 'Arial';
+  color: #f6a5c0;
+  font-family: natureBeauty, "Arial";
 }
 
 .navbar .leftSide {
@@ -40,9 +36,6 @@
   padding-left: 90px;
 }
 
-.navbar .leftSide img {
-  width: 70px;
-}
 
 .navbar .rightSide {
   flex: 50%;
@@ -94,6 +87,8 @@
   width: 70px;
   margin: 5px;
 }
+
+
 @media only screen and (max-width: 900px) {
   .navbar .rightSide a {
     width: 70px;
@@ -103,7 +98,8 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 800px) {
   .navbar .rightSide a {
     display: none;
   }
@@ -116,9 +112,22 @@
   .navbar .rightSide button {
     display: inherit;
   }
+
+  .navbar .leftSide {
+    flex: 80%;
+  }
+  
+  h1 {
+    font-size: 1.4em;
+  }
+
+  .rightSide {
+    flex: 20%;
+  }
 }
 
-@media only screen and (min-width: 600px) {
+
+@media only screen and (min-width: 801px) {
   .navbar .rightSide button {
     display: none;
   }
@@ -127,3 +136,4 @@
     display: none;
   }
 }
+
