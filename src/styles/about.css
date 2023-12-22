@@ -1,3 +1,9 @@
+
+.about {
+  position: relative;
+  top: 100px;
+}
+
 .flex-container {
   display: flex;
   flex-direction: column;
@@ -5,6 +11,7 @@
   justify-content: center; 
   align-items: center; 
 }
+
 
 .flex-item {
   padding: 1em;

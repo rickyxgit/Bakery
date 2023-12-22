@@ -10,6 +10,9 @@
   min-height: 90vh; /* Set a minimum height */
   display: flex;
   background-color: #121619;
+  position: relative;
+  top: 100px;
+  z-index: 1;
 }
 
 .contact .leftSide {
@@ -132,5 +135,27 @@ form label {
   .contact .leftSide {
     flex: 0;
   }
+
+  #contact-form {
+    margin-top: 0;
+  }
+
+  p {
+    padding: 2px;
+  }
+
+  .submitButton {
+
+    margin-top: 0.5em;
+   
+
+
+    font-size: 1em;
+    padding: 0.9em; 
+ 
+   
+  }
+
+
 }
 
