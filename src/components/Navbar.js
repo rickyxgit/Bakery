@@ -4,7 +4,6 @@ import "../styles/Navbar.css";
 import ReorderIcon from "@mui/icons-material/Reorder";
 
 function Navbar() {
-
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -23,20 +22,22 @@ function Navbar() {
     };
   }, []);
 
-
-
   const toggleDropdown = (event) => {
-    event.stopPropagation(); 
+    event.stopPropagation();
     setShowDropdown(!showDropdown);
     console.log("CLICK ON");
+
+    
   };
 
   const closeDropdown = () => {
     setShowDropdown(false);
   };
-
   
+
  
+ 
+
  
 
   return (
@@ -57,11 +58,15 @@ function Navbar() {
           {" "}
           About{" "}
         </NavLink>
-        <NavLink to="/contact" activeclassname="active" className="desktopAnchor">
+        <NavLink
+          to="/contact"
+          activeclassname="active"
+          className="desktopAnchor"
+        >
           {" "}
           Contact
         </NavLink>
-       
+
         <button onClick={toggleDropdown}>
           <ReorderIcon />
         </button>
@@ -69,22 +74,40 @@ function Navbar() {
         {/* Dropdown Menu */}
         {showDropdown && (
           <div className="dropdown" ref={dropdownRef}>
-            <NavLink to="/" activeclassname="active" className="dropdownAnchor" onClick={closeDropdown}>
+            <NavLink
+              to="/"
+              activeclassname="active"
+              className="dropdownAnchor"
+              onClick={closeDropdown}
+            >
               Home
             </NavLink>
-            <NavLink to="/menu" activeclassname="active" className="dropdownAnchor" onClick={closeDropdown}>
+            <NavLink
+              to="/menu"
+              activeclassname="active"
+              className="dropdownAnchor"
+              onClick={closeDropdown}
+            >
               Menu
             </NavLink>
-            <NavLink to="/about" activeclassname="active" className="dropdownAnchor" onClick={closeDropdown}>
+            <NavLink
+              to="/about"
+              activeclassname="active"
+              className="dropdownAnchor"
+              onClick={closeDropdown}
+            >
               About
             </NavLink>
-            <NavLink to="/contact" activeclassname="active" className="dropdownAnchor" onClick={closeDropdown}>
+            <NavLink
+              to="/contact"
+              activeclassname="active"
+              className="dropdownAnchor"
+              onClick={closeDropdown}
+            >
               Contact
             </NavLink>
           </div>
         )}
-
-       
       </div>
     </div>
   );

@@ -19,6 +19,7 @@
     background-image:  url("../assets/backgroundHome.jpg");
     position: relative;
     top: 100px;
+    z-index: 1;
   }
 
   .headerContainer {

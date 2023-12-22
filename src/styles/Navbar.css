@@ -9,6 +9,8 @@
   width: 75%;
 }
 
+
+
 .navbar .rightSide a:hover {
   color: #f6a5c0;
 }
@@ -69,50 +71,70 @@
   font-size: 40px;
 }
 
-.navbar #open {
-  padding-left: 0px;
-}
-.navbar #open img {
-  display: none;
-}
 
-.navbar #close img {
-  display: inherit;
-}
-
-.navbar #open .hiddenLinks {
-  display: inherit;
-  margin-left: 30px;
-}
-
-.navbar #close .hiddenLinks {
-  display: none;
-}
-
-.navbar #open a {
-  width: 70px;
-  margin: 5px;
-}
 
 
 
 /** */
 
-.navbar .dropdown {
+/* Add this to your styles.css or a styled-components file */
+@keyframes fadeIn {
+  from {
+    opacity: 0.2;
+ 
+    transform: translateX(50px);
+  }
+  to {
+  
+    opacity: 1;
+    transform: translateX(0);
+  }
 
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0.2;
+    transform: translateX(50px);
+  }
+}
+
+.navbar .rightSide .dropdown {
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: fixed;
-  z-index: 2;
+  
+  position: absolute;
+  
   top: 100px;
   right: 0px;
   width: 220px;
   background:  #333333;
   padding: 8px 8px 8px 8px;
 
+  /**transform: translateY(-10px); */
+  animation: fadeIn 0.4s ease-out;
+  
+ 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 900px) {
