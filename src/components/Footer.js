@@ -10,8 +10,8 @@ function Footer() {
     <div className="footer">
         <div className="socialMedia">
 
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-            <InstagramIcon/>
+          <a name="Instagram"  href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <InstagramIcon />
           </a>
 
           <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
