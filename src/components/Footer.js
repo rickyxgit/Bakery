@@ -10,7 +10,7 @@ function Footer() {
     <div className="footer">
         <div className="socialMedia">
 
-          <a name="Instagram"  href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <a data-testid="Instagram"  href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
             <InstagramIcon />
           </a>
 

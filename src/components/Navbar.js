@@ -25,20 +25,11 @@ function Navbar() {
   const toggleDropdown = (event) => {
     event.stopPropagation();
     setShowDropdown(!showDropdown);
-    console.log("CLICK ON");
-
-    
   };
 
   const closeDropdown = () => {
     setShowDropdown(false);
   };
-  
-
- 
- 
-
- 
 
   return (
     <div className="navbar">
